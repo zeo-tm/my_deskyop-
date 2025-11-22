@@ -1,5 +1,5 @@
 # my_deskyop-
 I USE ALPINE AND NIRI BTW 
-<img width="1915" height="1080" alt="2025-11-21_15-26" src="https://github.com/user-attachments/assets/b1182e9c-1f09-4898-9128-76a97295b52b" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/65e27f21-13f0-4407-8958-f5fe4861fb9b" />
 
 
