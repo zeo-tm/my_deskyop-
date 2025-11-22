@@ -10,9 +10,9 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": [],
-  "modules-center": ["mpris","pulseaudio", "clock", "clock#simpleclock","tray"],
-  "modules-right": [],
+  "modules-left": ["niri/workspaces"],
+  "modules-center": ["cpu","mpris", "clock","clock#simpleclock","nm-applet"],
+  "modules-right": ["pulseaudio", "battery","tray"],
    
   "custom/spotify": {
     "format": "  {}",
@@ -34,16 +34,7 @@
       "default": "",
     },
   },
-  "hyprland/workspaces": {
-    "on-click": "activate",
-    "format": "{id}",
-    "all-outputs": true,
-    "disable-scroll": false,
-    "active-only": false,
-  },
-  "hyprland/window": {
-    "format": "{title}",
-  },
+  
   "tray": {
     "show-passive-items": true,
     "spacing": 10,
@@ -83,12 +74,7 @@
     "format": "|",
     "tooltip": false,
   },
-  "custom/power": {
-    "tooltip": false,
-    "on-click": "wlogout -p layer-shell &",
-    "format": "⏻",
-  },
-  "custom/notification": {
+    "custom/notification": {
     "escape": true,
     "exec": "swaync-client -swb",
     "exec-if": "which swaync-client",
@@ -101,4 +87,37 @@
     "return-type": "json",
     "tooltip": false,
   },
+
+"battery": {
+  "bat": "BAT0",
+  "interval": 60,
+  "states": {
+    "good": 95,
+    "warning": 40,
+    "critical": 20
+  },
+  "format": "{icon}  {capacity}%",
+  "format-charging": "󰂄 {capacity}%",
+  "format-plugged": "󰂄  {capacity}%",
+  "format-alt": "{time} {icon}",
+  "tooltip": "true",
+  "tooltip-format": "{time}",
+  "format-icons": ["", "", "", "", ""],
+  "max-length": 15
+},
+
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": true,
+    "interval": 1,
+  },
+
+
+"niri/workspaces": {
+    "format": "{index}",           // показывает номер рабочего стола
+    "format-focused": "{index}",
+    "format-visible": "{index}",
+    "format-urgent": "{index}"
+}
+  
 }

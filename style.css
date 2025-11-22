@@ -40,7 +40,7 @@ window#waybar {
 
 #workspaces button.active {
   background-color: #222425;
-  color: #c8bea6;
+  color: #74ed7a;
 }
 
 #workspaces button.urgent {
@@ -50,7 +50,10 @@ window#waybar {
 
 #clock,
 #pulseaudio,
-#mpris {
+#mpris
+#battery
+#tray
+{
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
@@ -58,22 +61,6 @@ window#waybar {
   background-color: #222425;
 }
 
-#mpris.playing {
-  color: #cbc4d3;
-}
-
-#mpris.paused {
-  color: #cbc4d3;
-}
-
-#custom-sep {
-  padding: 0px;
-  color: #cbc4d3;
-}
-
-window#waybar.empty #window {
-  background-color: transparent;
-}
 
 
 
@@ -87,16 +74,31 @@ window#waybar.empty #window {
 
 
 #pulseaudio {
-  color: #74ed7a;
+  color: #ad3c34;
 }
 
 #pulseaudio.muted {
-  color: #C8BEA6;
+  color: #ad3c34;
 }
 
+#battery {
+  margin-right: 20px;
+  color: #74ed7a;
+  font-size: 12px;
+}
+
+#tray {
+  margin-right: 30px;
+}
+
+
+#cpu {
+  color: #7297ed;
+}
 
 
 tooltip {
   background-color: #222425;
-  border: 2px solid #C8BEA6;
+  border: 2px solid #74ed7a;
 }
+
