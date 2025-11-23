@@ -31,11 +31,13 @@ window#waybar {
   /* background-color: #181825; */
   background-color: #222425;
   color: #cdd6f4;
-}
+  
+  }
 
 #workspaces button:hover {
   color: #222425;
   background-color: #cdd6f4;
+
 }
 
 #workspaces button.active {
@@ -46,6 +48,7 @@ window#waybar {
 #workspaces button.urgent {
   background-color: #222425;
   color: #cbc4d3;
+ 
 }
 
 #clock,
@@ -74,11 +77,11 @@ window#waybar {
 
 
 #pulseaudio {
-  color: #ad3c34;
+  color: #99327f;
 }
 
 #pulseaudio.muted {
-  color: #ad3c34;
+  color: #99327f;
 }
 
 #battery {
@@ -88,14 +91,39 @@ window#waybar {
 }
 
 #tray {
-  margin-right: 30px;
-}
-
+    background-color: #313a45;
+    margin-left: 5px;   /* сдвигаем вправо на 5 пикселей */
+    margin-right: 4px;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    box-shadow:
+        0 0 0 2px #3a4657,
+        0 0 0 2px #3a4657;
+         }
 
 #cpu {
   color: #7297ed;
 }
 
+#memory {
+  color: #b07337;
+}
+
+#keyboard {
+    color: #5fafd7;  
+}
+
+#custom-alpine {
+   color: #2e6a87;
+    color: #2e6a87;
+    padding: 0 15px;
+    margin-left: 2px;   /* меньше — модули слева ближе */
+    margin-right: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 23px;
+          }
 
 tooltip {
   background-color: #222425;
