@@ -16,7 +16,7 @@
 
 
 "custom/alpine": {
-    "format": "󰣇",
+    "format": "",
     "tooltip": "Alpine Linux",
     "interval": 3600
 },
