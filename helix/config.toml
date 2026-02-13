@@ -1,0 +1,10 @@
+theme = "tokyonight"
+
+[editor]
+clipboard-provider = "wayland"
+
+[keys.normal]
+y = ":clipboard-yank"
+
+[keys.select]
+y = ":clipboard-yank"
